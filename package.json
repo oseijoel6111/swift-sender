@@ -1,0 +1,17 @@
+{
+  "name": "swift-sender",
+  "version": "1.0.0",
+  "description": "Email management system aim to simplify the automation of sending emails to either single or bulk users",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
