@@ -1,0 +1,40 @@
+<div class="page-wrapper">
+  <div class="content container-fluid">
+    <div class="page-header">
+      <div class="row">
+        <div class="col-sm-12 mt-5">
+          <h3 class="page-title mt-3">Sent Emails</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 d-flex">
+        <div class="container mt-4">
+          <h1>Email History</h1>
+          <div class="col-md-12 d-flex">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">ReceiverID</th>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Timestamp</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% sentEmails.forEach((email, index) => { %>
+                <tr>
+                  <th scope="row"><%= index + 1 %></th>
+                  <td><%= email.receiverId %></td>
+                  <td><%= email.subject %></td>
+                  <td><%= new Date(email.timestamp).toLocaleString() %></td>
+                </tr>
+                <% }) %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
