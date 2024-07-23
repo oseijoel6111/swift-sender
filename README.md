@@ -78,7 +78,7 @@ NAME= my CustomSessionld
 Start the server:
 yarn start
 
-Usage
+USAGE:
 
 Register a new user: Navigate to /admin/signup and create a new account.
 Log in: Navigate to /admin/login and log in with your credentials.
@@ -87,6 +87,7 @@ Send an email: Use the created template to send an email via the /emails/send en
 View sent emails: Navigate to /emails/history to view the history of ent emails.
 
 Challenges and Solutions
+
 Responsive Email Design: Ensured email templates are responsive using media queries.
 Secure Email Verification: Implemented JWT for secure email verification without storing tokens.
 Efficient Email Handling: Integrated with SendGrid and Mailgun to handle email delivery efficiently.
