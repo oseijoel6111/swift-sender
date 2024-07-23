@@ -81,10 +81,10 @@ yarn start
 Usage
 
 Register a new user: Navigate to /admin/signup and create a new account.
-Log in: Navigate to /admin/login and log in with your credentials. 
+Log in: Navigate to /admin/login and log in with your credentials.
 Create an email template: Navigate to /emails/templates and create a new template.
-Send an email: Use the created template to send an email via the /emails/send endpoint. 
-View sent emails: Navigate to /emails/history to view the history of sent emails.
+Send an email: Use the created template to send an email via the /emails/send endpoint
+View sent emails: Navigate to /emails/history to view the history of ent emails.
 
 Challenges and Solutions
 Responsive Email Design: Ensured email templates are responsive using media queries.
@@ -96,7 +96,7 @@ Future Improvements
 Implement advanced analytics for email tracking.
 Expand user role functionalities and permissions.
 Integrate AI for personalized email content.
-Develop a mobile app for email management on-the-go.
+Develop a mobile app for email management on-the-go
 
 Contributors
 
