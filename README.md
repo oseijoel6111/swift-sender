@@ -72,16 +72,18 @@ SMTP_USER=tester.com
 
 # SESSION
 SECRET = fhfffhhhhdjdj
+
 NAME= my CustomSessionld
 
 Start the server:
 yarn start
 
 Usage
+
 Register a new user: Navigate to /admin/signup and create a new account.
-Log in: Navigate to /admin/login and log in with your credentials.
+Log in: Navigate to /admin/login and log in with your credentials. 
 Create an email template: Navigate to /emails/templates and create a new template.
-Send an email: Use the created template to send an email via the /emails/send endpoint.
+Send an email: Use the created template to send an email via the /emails/send endpoint. 
 View sent emails: Navigate to /emails/history to view the history of sent emails.
 
 Challenges and Solutions
@@ -90,6 +92,7 @@ Secure Email Verification: Implemented JWT for secure email verification without
 Efficient Email Handling: Integrated with SendGrid and Mailgun to handle email delivery efficiently.
 
 Future Improvements
+
 Implement advanced analytics for email tracking.
 Expand user role functionalities and permissions.
 Integrate AI for personalized email content.
