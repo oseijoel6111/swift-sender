@@ -81,25 +81,34 @@ yarn start
 USAGE:
 
 Register a new user: Navigate to /admin/signup and create a new account.
+
 Log in: Navigate to /admin/login and log in with your credentials.
+
 Create an email template: Navigate to /emails/templates and create a new template.
+
 Send an email: Use the created template to send an email via the /emails/send endpoint
+
 View sent emails: Navigate to /emails/history to view the history of ent emails.
 
-Challenges and Solutions
+CHALLENGES AND SOLUTIONS:
 
 Responsive Email Design: Ensured email templates are responsive using media queries.
+
 Secure Email Verification: Implemented JWT for secure email verification without storing tokens.
+
 Efficient Email Handling: Integrated with SendGrid and Mailgun to handle email delivery efficiently.
 
-Future Improvements
+FUTURE IMPROVEMENTS:
 
 Implement advanced analytics for email tracking.
+
 Expand user role functionalities and permissions.
+
 Integrate AI for personalized email content.
+
 Develop a mobile app for email management on-the-go
 
-Contributors
+CONTRIBUTORS:
 
 Joel: Backend Developer
 Serwaa : Backend Developer
