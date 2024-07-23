@@ -59,7 +59,7 @@ https://github.com/oseijoel6111/swift-sender
 Install dependencies:
 yarn install
 
-[4:33 pm, 17/07/2024] Joel ALX: Set up environment variables:
+Set up environment variables:
 Create a .env file in the root directory and add the following:
 
 PORT=4500
@@ -72,34 +72,43 @@ SMTP_USER=tester.com
 
 # SESSION
 SECRET = fhfffhhhhdjdj
-NAME= myCustomSessionId
-[4:33 pm, 17/07/2024] Joel ALX: Start the server:
-yarn start
-[4:34 pm, 17/07/2024] Joel ALX: Usage
-Register a new user: Navigate to /admin/signup and create a new account.
-Log in: Navigate to /admin/login and log in with your credentials.
-Create an email template: Navigate to /emails/templates and create a new template.
-Send an email: Use the created template to send an email via the /emails/send endpoint.
-View sent emails: Navigate to /emails/history to view the history of sent emails.
 
-[4:33 pm, 17/07/2024] Joel ALX: Start the server:
+NAME= my CustomSessionld
+
+Start the server:
 yarn start
-[4:34 pm, 17/07/2024] Joel ALX: Usage
+
+USAGE:
+
 Register a new user: Navigate to /admin/signup and create a new account.
+
 Log in: Navigate to /admin/login and log in with your credentials.
+
 Create an email template: Navigate to /emails/templates and create a new template.
-Send an email: Use the created template to send an email via the /emails/send endpoint.
-View sent emails: Navigate to /emails/history to view the history of sent emails.
-[4:34 pm, 17/07/2024] Joel ALX: Challenges and Solutions
+
+Send an email: Use the created template to send an email via the /emails/send endpoint
+
+View sent emails: Navigate to /emails/history to view the history of ent emails.
+
+CHALLENGES AND SOLUTIONS:
+
 Responsive Email Design: Ensured email templates are responsive using media queries.
+
 Secure Email Verification: Implemented JWT for secure email verification without storing tokens.
+
 Efficient Email Handling: Integrated with SendGrid and Mailgun to handle email delivery efficiently.
-[4:34 pm, 17/07/2024] Joel ALX: Future Improvements
+
+FUTURE IMPROVEMENTS:
+
 Implement advanced analytics for email tracking.
+
 Expand user role functionalities and permissions.
+
 Integrate AI for personalized email content.
-Develop a mobile app for email management on-the-go.
-[4:35 pm, 17/07/2024] Joel ALX: Contributors
+
+Develop a mobile app for email management on-the-go
+
+CONTRIBUTORS:
 
 Joel: Backend Developer
 Serwaa : Backend Developer
