@@ -3,6 +3,8 @@ const router  = express.Router()
 
 const {
     index,
+    about,
+    contact,
     getLogin,
     getSignUp,
     postLogin,
@@ -11,6 +13,8 @@ const {
 
 // Get routes
 router.get('/', index);
+router.get('/about', about);
+router.get('/contact', contact);
 router.get('/login', getLogin);
 router.get('/signup', getSignUp);
 

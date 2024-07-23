@@ -5,7 +5,15 @@ const jwt = require('jsonwebtoken');
 const SecretKey = 'sfkeoffedo'
 
 const index =  (req, res)=>{
-    res.render('pages/index')
+    res.render('main', {route: '/'})
+};
+
+const about = (req, res) => {
+  res.render('main', { route: 'about'});
+};
+
+const contact = (req, res) => {
+  res.render('main', { route: 'contact'});
 };
 
 const getLogin =  (req, res)=>{
@@ -14,7 +22,7 @@ const getLogin =  (req, res)=>{
 
 const getSignUp =  (req, res)=>{
     res.render('pages/signup')
-}
+};
 
 const postSignUp = async (req, res) => {
     const { firstName, lastName, email, password } = req.body;
@@ -51,7 +59,7 @@ const postSignUp = async (req, res) => {
       }
       res.status(500).json({ message: 'Error creating user '+error });
     }
-}
+};
 
 const postLogin =  async (req, res) => {
     const { email, password } = req.body;
@@ -79,10 +87,12 @@ const postLogin =  async (req, res) => {
     } catch (error) {
       res.status(500).json({ message: 'Error logging in' });
     }
-}
+};
 
 module.exports = {
     index,
+    about,
+    contact,
     getLogin,
     getSignUp,
     postLogin,
