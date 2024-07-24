@@ -15,23 +15,27 @@
         <div class="row">
             <div class="col-md-12" d-flex">
 
-    <form action="/admin/send-email" method="post" >
-      <div class="row">
-        <div class="col-md-6">
-          <label for="" class="form-label">Reciever Email</label>
-          <input type="text" name="receiverEmail" class="form-control" placeholder="Enter the reciever's Email Address">
-        </div>
-        <div class="col-md-6">
-          <label for="" class="form-label">Subject</label>
-          <input type="text" name="subject" class="form-control" placeholder="Type the subject of your message">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="">Email Content</label>
-        <textarea name="body" class="form-control" id="" rows="5" placeholder="Type Your Message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send Email</button>
-    </form>
+              <form action="/admin/send-email" method="post" id="emailForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="emailInput" class="form-label">Receiver(s) Email</label>
+                    <div id="emailInputContainer" class="form-control">
+                      <input type="text" id="emailInput" placeholder="Press Enter After entering email(s)">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" name="subject" class="form-control" placeholder="Type the subject of your message">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="body">Email Content</label>
+                  <textarea name="body" class="form-control" id="body" rows="5" placeholder="Type Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Email</button>
+              </form>
+              
+              
             </div>
         </div>
     </div>

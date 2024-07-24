@@ -2,12 +2,12 @@ const User = require("../Models/db/users");
 const Email = require("../Models/db/emails");
 const nodemailer = require("nodemailer");
 
-const main = async (req, res) => {
-  res.render("main");
+const dashboard = async (req, res) => {
+  res.render("admin-dashboard", {uName: req.session.userEmail});
 };
 
 const getSendEmail = async (req, res) => {
-  res.render("admin-index");
+  res.render("admin-index", {uName: req.session.userEmail});
 };
 
 const postSendEmail = async (req, res) => {
@@ -37,8 +37,7 @@ const postSendEmail = async (req, res) => {
       text: body,
     };
 
-   const result = await transporter.sendMail(mailOptions);
-    console.log(result);
+    await transporter.sendMail(mailOptions);
 
     await Email.create({
       senderId,
@@ -49,7 +48,6 @@ const postSendEmail = async (req, res) => {
 
     return res.redirect("/admin/history");
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: "Error sending email" });
   }
 };
@@ -81,7 +79,7 @@ const history = async (req, res) => {
 
   const contents = sentEmails.map((e) => e.dataValues);
 
-  res.render("admin-history", { sentEmails: contents });
+  res.render("admin-history", { sentEmails: contents, uName: req.session.userEmail });
 };
 
-module.exports = { main, getSendEmail, postSendEmail, sentEmails, history };
+module.exports = {dashboard, getSendEmail, postSendEmail, sentEmails, history };

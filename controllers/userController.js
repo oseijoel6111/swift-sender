@@ -83,7 +83,7 @@ const postLogin =  async (req, res) => {
             res.status(500).send('No session')
         }
     }
-      res.redirect('/admin/send-email')
+      res.redirect('/admin/dashboard')
     } catch (error) {
       res.status(500).json({ message: 'Error logging in' });
     }

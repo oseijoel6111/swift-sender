@@ -134,3 +134,53 @@
     background: rgb(0, 149, 246);
     opacity: .7;
   }
+
+
+
+/* ********************** Multiple email tag ************************ */
+#emailInputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: auto;
+  min-height: 40px;
+}
+
+.email-tag {
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.email-tag span {
+  margin-right: 5px;
+}
+
+.email-tag button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666;
+}
+
+#emailInput {
+  border: none;
+  outline: none;
+  flex: 1;
+  min-width: 150px;
+}
+
+::placeholder {
+  color: initial;
+}
+
+::placeholder {
+  color: red;
+  font-weight: bold;
+}
