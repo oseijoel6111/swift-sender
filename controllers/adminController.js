@@ -37,7 +37,8 @@ const postSendEmail = async (req, res) => {
       text: body,
     };
 
-    await transporter.sendMail(mailOptions);
+   const result = await transporter.sendMail(mailOptions);
+    console.log(result);
 
     await Email.create({
       senderId,
@@ -48,6 +49,7 @@ const postSendEmail = async (req, res) => {
 
     return res.redirect("/admin/history");
   } catch (error) {
+    console.log(error);
     res.status(500).json({ message: "Error sending email" });
   }
 };
